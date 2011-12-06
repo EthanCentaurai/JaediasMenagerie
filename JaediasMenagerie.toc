@@ -1,0 +1,9 @@
+## Interface: 40300
+## Title: Jaedia's Menagerie
+## Description: Allows you to customise which companions are chosen by the "/randompet" command.
+## Author: Ethan Centaurai
+## Version: 1.0
+## SavedVariables: JaediasMenagerieDB
+
+AceGUI-3.0-CompanionListWidget.lua
+Core.lua
