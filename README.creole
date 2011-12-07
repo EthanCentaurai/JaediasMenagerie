@@ -1,5 +1,5 @@
 === What It Does ===
-This addon adds a blacklist feature to the built-in "/randompet" slash command. Simply drag and drop companions you don't want to show off into the Blacklist to prevent it from being chosen.
+This addon adds a blacklist feature to the in-game **"/randompet"** slash command. Simply drag and drop companions you don't want to show off into the Blacklist to prevent it from being chosen.
 
 === Why Did You Make This? ===
 I made this addon as I was spamming the "/randompet" command one day and it chose my Guild Page companion at one point. This companion has a four-hour cooldown and it got wasted thanks to the random number generator.
@@ -18,4 +18,4 @@ To remove a companion from the blacklist, either click on or drag a companion fr
 Why yes, it is indeed. I made this addon with Jaedia in mind and she is happy with me using the name. It fitted well and "BetterRandomPet" sounded too lame and generic!
 
 === I Found A Problem! Halp! ===
-If you've found an error or would like to suggest a feature, please make a new ticket in the [[https://github.com/EthanCentaurai/JaediasMenagerie/issues|issues hub]] or leave a comment here.
+If you've found an error or would like to suggest a feature, please make a new ticket in the [[https://github.com/EthanCentaurai/JaediasMenagerie/issues|issues hub]].
