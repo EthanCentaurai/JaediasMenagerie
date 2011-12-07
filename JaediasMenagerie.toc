@@ -5,5 +5,15 @@
 ## Version: 1.0
 ## SavedVariables: JaediasMenagerieDB
 
+#@no-lib-strip@
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+libs\AceAddon-3.0\AceAddon-3.0.lua
+libs\AceDB-3.0\AceDB-3.0.lua
+libs\AceGUI-3.0\AceGUI-3.0.xml
+libs\AceConfig-3.0\AceConfig-3.0.xml
+#@end-no-lib-strip@
+
 AceGUI-3.0-CompanionListWidget.lua
+
 Core.lua
