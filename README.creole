@@ -1,0 +1,21 @@
+=== What It Does ===
+This addon adds a blacklist feature to the built-in "/randompet" slash command. Simply drag and drop companions you don't want to show off into the Blacklist to prevent it from being chosen.
+
+=== Why Did You Make This? ===
+I made this addon as I was spamming the "/randompet" command one day and it chose my Guild Page companion at one point. This companion has a four-hour cooldown and it got wasted thanks to the random number generator.
+
+This addon originally started as a safety check to prevent the Guild Page/Squire companions from being chosen, but after chatting with a friend one day I decided to include blacklist customisation and release it to the public.
+
+=== How Do I Use This? ===
+To blacklist a companion:
+# Open the Spellbook and click on the Companions tab.
+# Open the Menagerie by using the "/jae" command. (a button is on the todo list)
+# Drag a companion from the spellbook and drop it onto the empty grey box under "Blacklist".
+
+To remove a companion from the blacklist, either click on or drag a companion from the list.
+
+=== Why Call This "Jaedia's Menagerie"? Isn't That A Blog? ===
+Why yes, it is indeed. I made this addon with Jaedia in mind and she is happy with me using the name. It fitted well and "BetterRandomPet" sounded too lame and generic!
+
+=== I Found A Problem! Halp! ===
+If you've found an error or would like to suggest a feature, please make a new ticket in the [[https://github.com/EthanCentaurai/JaediasMenagerie/issues|issues hub]] or leave a comment here.
