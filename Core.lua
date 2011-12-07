@@ -20,9 +20,19 @@ local random		= _G.math.random
 local wipe		= _G.wipe
 
 
+--@debug@--
+local debug = false
+--@end-debug@--
+
+
 -- config, loaded on demand
 function Jaedia:Set(_, spellID, value)
-	print(spellID, value)
+	--@debug@--
+	if debug then
+		if value then print(spellID, "has been blacklisted.")
+		else print(spellID, "is no longer blacklisted.")
+	end
+	--@end-debug@--
 
 	db[spellID] = value
 	AceConfigRegistry:NotifyChange(ID)
@@ -58,6 +68,14 @@ function Jaedia:OpenConfig()
 				set = "Set",
 				values = "GetValues",
 			},
+			--@debug@--
+			debug = {
+				order = 3, type = "toggle",
+				name = "Debug",
+				get = function() return debug end,
+				set = function() debug = not debug end,
+			},
+			--@end-debug@--
 		},
 	}
 
@@ -69,8 +87,7 @@ end
 function Jaedia:OnEnable()
 	self.db = LibStub("AceDB-3.0"):New("JaediasMenagerieDB", {
 		profile = {
-			-- blacklist the Guild Squire/Page companions by default
-			[92395] = true, [92396] = true, [92397] = true, [92398] = true,
+			[92395] = true, [92396] = true, [92397] = true, [92398] = true, -- blacklist the Guild Squire/Page by default
 		}
 	}, "Default")
 
@@ -93,6 +110,13 @@ function Jaedia:OnEnable()
 			repeat
 				index = random(1, numCompanions)
 				_, _, spellID = GetCompanionInfo("CRITTER", index)
+
+				--@debug@--
+				if debug then
+					if db[spellID] then print(spellID, "is blacklisted, retrying.")
+					else print(spellID, "is safe, summoning.") end
+				end
+				--@end-debug@--
 
 			until not db[spellID]
 
