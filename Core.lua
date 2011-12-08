@@ -30,7 +30,7 @@ function Jaedia:Set(_, spellID, value)
 	--@debug@--
 	if debug then
 		if value then print(spellID, "has been blacklisted.")
-		else print(spellID, "is no longer blacklisted.")
+		else print(spellID, "is no longer blacklisted.") end
 	end
 	--@end-debug@--
 
